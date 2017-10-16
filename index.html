@@ -1,0 +1,24 @@
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>CodePen - HSLA matic</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+  <body onload="cambiacolor()">
+    <div id="contenedor">
+    <div id="title">HSLA<small>MATIC</small></div>
+    <div class="input"><input type="range" min="0" max="360" id="H" oninput="mostrarvalor(this)" value="190"><label id ="Hlab">190</label></input>
+    </div>
+    <div class="input"><input type="range" min="0" max="100" id="S" oninput="mostrarvalor(this)" value="70"><label id ="Slab">70</label></input>
+    </div>
+    <div class="input">
+    <input type="range" min="0" max="100" id="L" oninput="mostrarvalor(this)" value="35"><label id ="Llab">35</label></input></div>
+    <div class="input">
+    <input type="range" min="0" max="100"  id="A" oninput="mostrarvalor(this)" value="80"><label id ="Alab">0.8</label></input></div>
+    <div id="check"><div id="color"></div></div>
+    <input type="text" id="hsla" value="" onclick="seleccionar(this)"></input>
+    </div>
+    <script type="text/javascript" src="function.js"></script>
+    <div id="foter"><a href="http://www.avispa.cl/">Echo con ❤️️ por Avispa.cl</a></div>
+  </body>
+</html>
